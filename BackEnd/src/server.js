@@ -11,10 +11,12 @@ const server = express ();
 
 //Importar 'Rotas' de Routes.js
 const routes = require ('./Routes') 
+const routes = require ('./Routes');
 /*a sintaxe para importar um arquivo que não é um módulo feito por terceiros
  é preciso indicar o caminho do arquivo nesse caso /. pois está na mesma pasta*/
 
  server.use(routes)//use geralmente é utilizado para configurações que está em outro arquivo funciona como se fosse add um plugin
+ server.use(routes);//use geralmente é utilizado para configurações que está em outro arquivo funciona como se fosse add um plugin
 
 
     //Porta que o servidor vai atender
