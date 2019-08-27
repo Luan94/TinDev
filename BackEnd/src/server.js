@@ -8,6 +8,8 @@ const express = require ('express');
 const server = express ();
 //Endereço '/' e função 
 server.get('/', (req, res) => {
-    return res.send (`Hello ${req.query.name}`);}); //res.send envia string 'Hello $querynaurl name=alguma coisa'
-//Porta que o servidor vai atender
+    return res.json({Message: `Hello ${req.query.name}` });}); /*res.send envia string 'Hello $querynaurl name=alguma coisa' , 
+    .json(javascript object notation funciona igual objeto java sintaxe entre {})*/
+
+    //Porta que o servidor vai atender
 server.listen (3333); 
