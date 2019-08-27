@@ -4,6 +4,6 @@ const express = require ('express');
 const server = express ();
 //Endereço '/' e função 
 server.get('/', (req, res) => {
-    return res.send ('Hello World');}); 
+    return res.send ('Hello World');}); //res.send resposta envia string 'Hello World'
 //Porta que o servidor vai atender
 server.listen (3333); 
